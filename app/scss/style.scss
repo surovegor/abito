@@ -354,10 +354,14 @@ body {
   font-size: 14px;
   color: #0a143a;
 }
-.header {
+.container {
   max-width: 1146px;
   margin: auto;
+}
+.header {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex;
@@ -388,6 +392,7 @@ body {
   padding: 10px 15px;
 }
 .button-link {
+  color: #0A143A;
 }
 .button-primary {
   background: #256eeb;
@@ -419,7 +424,107 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 16px;
 }
 .search-button-text {
   margin-left: 5px;
+}
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  max-width: 240px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.like {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0A143A;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.footer-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #0A143A;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
 }
